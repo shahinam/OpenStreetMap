@@ -1,0 +1,14 @@
+uuid: cc473345-152e-41f1-b67e-9d40d8f7ad57
+name: 'Open Street Map'
+mail: example@example.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
