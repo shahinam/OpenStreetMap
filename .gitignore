@@ -40,3 +40,4 @@ Thumbs.db
 
 data/db/*
 !data/db/.gitkeep
+!data/backup/drupal.sql.gz
