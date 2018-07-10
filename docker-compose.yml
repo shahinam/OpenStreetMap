@@ -1,0 +1,19 @@
+version: '3.1'
+
+services:
+  web:
+    image: drupal:8-apache
+    ports:
+      - 8080:80
+    volumes:
+      - ./app:/var/www/html
+    restart: always
+
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: "root"
+      MYSQL_DATABASE: "drupal"
+      MYSQL_USER: "drupal"
+      MYSQL_PASSWORD: "drupal"
+    restart: always
