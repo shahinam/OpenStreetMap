@@ -1,0 +1,19 @@
+uuid: 760dfbc4-4f89-4012-876b-28abf8294f39
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.place
+id: node.place.field_description
+field_name: field_description
+entity_type: node
+bundle: place
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

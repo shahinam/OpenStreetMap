@@ -1,0 +1,20 @@
+uuid: 8b4da3f8-24f0-4c74-b521-51e47c7e66f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.place.field_coordinates
+    - node.type.place
+  module:
+    - user
+id: node.place.teaser
+targetEntityType: node
+bundle: place
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_coordinates: true

@@ -1,0 +1,60 @@
+uuid: badf3898-dc53-4d34-a251-4027dc7bcca7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.place.field_coordinates
+    - field.field.node.place.field_description
+    - node.type.place
+  module:
+    - leaflet
+    - user
+id: node.place.default
+targetEntityType: node
+bundle: place
+mode: default
+content:
+  field_coordinates:
+    weight: 1
+    label: hidden
+    settings:
+      multiple_map: 0
+      leaflet_map: 'OSM Mapnik'
+      height: 400
+      hide_empty_map: 0
+      popup: false
+      map_position:
+        force: 0
+        center:
+          lat: 0
+          lon: 0
+        zoom: 12
+        minZoom: 1
+        maxZoom: 18
+      icon:
+        iconUrl: ''
+        shadowUrl: ''
+        iconSize:
+          x: null
+          'y': null
+        iconAnchor:
+          x: null
+          'y': null
+        shadowAnchor:
+          x: null
+          'y': null
+        popupAnchor:
+          x: null
+          'y': null
+    third_party_settings: {  }
+    type: leaflet_formatter_default
+    region: content
+  field_description:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden:
+  links: true
